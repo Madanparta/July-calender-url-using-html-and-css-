@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+}
+
+.img {
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    top: 30px;
+}
+
+.img .text {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+h3 {
+    word-spacing: 5px;
+}
+
+.img .ico {
+    position: absolute;
+    top: 25%;
+    right: 10px;
+}
+
+.img .ico span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.calender {
+    width: 300px;
+    height: 500px;
+    background: #ffff;
+    box-sizing: border-box;
+    background-size: cover;
+    background: #383838;
+    box-shadow: 0 6px 60px rgba(0, 0, 0, .5);
+    position: relative;
+    top: 50px;
+}
+
+.calender .date {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.calender .date div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    columns: #262626;
+}
+
+.calender .date div.days {
+    font-weight: 700;
+}
+
+.calender .date div.days:first-child,
+.calender .date div.number:nth-child(7n+1) {
+    color: #ff685d;
+    font-weight: 700;
+}
+
+.calender .date div.days:first-child:hover {
+    color: #ff685d;
+    font-weight: 700;
+}
+
+.calender .date div.number:nth-child(7n+1):hover {
+    color: #ff685d;
+    font-weight: 700;
+}
+
+.calender .date div.days:hover {
+    cursor: pointer;
+    background: #EEEEEE;
+    border-radius: 50%;
+    color: #262626;
+}
+
+.calender .date div.number:hover {
+    cursor: pointer;
+    background: #EEEEEE;
+    color: #262626;
+}
+
+.calender .date div.active {
+    background: #C4DDFF;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
